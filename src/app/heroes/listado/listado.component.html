@@ -1,0 +1,16 @@
+<p>listado works!</p>
+
+<ul>
+    <li *ngFor="let value of lenguajes;let i =index">
+        {{i + 1}} - {{value}}
+    </li>
+</ul>
+
+
+<button (click)="borrarHeroe()">Borrar</button>
+<ng-template #noBorrado>
+    <h2>No ha borrado nada.  </h2>
+</ng-template>
+<!-- Es local  noBorrado => #noBorrado-->
+<div *ngIf="eliminado.length>0; else noBorrado"> Eliminado : <strong>{{eliminado}}</strong> </div>
+
