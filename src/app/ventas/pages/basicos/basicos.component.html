@@ -1,0 +1,56 @@
+<div class="text-layout">
+    <h1>Pipes Angular</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum delectus
+        nisi ipsam suscipit! Dicta ipsum, totam qui natus vitae corrupti harum dolor
+        porro dolore facilis debitis est repudiandae blanditiis molestias?
+    </p>
+</div>
+
+<div class="p-grid">
+    <div class="p-col-4 ">
+        <p-card 
+        header="Lower"
+        [subheader]="nombreLower|lowercase">
+          </p-card>
+    </div>
+
+    <div class="p-col-4">
+        <p-card 
+        header="Uppercase"
+        [subheader]="nombreLower|uppercase">
+       </p-card>
+    </div>
+
+    <div class="p-col-4">
+        <p-card 
+        header="Titlecase"
+        [subheader]="nombreCompleto|titlecase">
+       </p-card>
+    </div>
+
+</div>
+
+
+<div class="p-grid">
+    <div class="p-col-6">
+        <p-card > 
+            <ul>
+                <li>date</li>
+                <li>date| date:'short' </li>
+                <li>date| date:'medium' </li>
+                <li>date| date:'dd-MM-YYYY' </li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="p-col-6">
+        <p-card > 
+            <ul>
+                <li>{{date}}</li> 
+                <li>{{date| date:'short'}} </li>
+                <li>{{date| date:'medium'}} </li>
+                <li>{{date| date:'dd-MM-YYYY'}} </li>
+            </ul>
+        </p-card>
+    </div>
+</div>
