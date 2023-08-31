@@ -10,16 +10,9 @@ import { DbzService } from '../services/dbz.service';
 })
 export class MainPageComponent {
 
-  nuevo:Personaje={
-    nombre:'',
-    poder: 0
-  }
+  nuevo:Personaje={ nombre:'',  poder: 0   }
  
-   
   constructor(){}
-  
-  
-  
   
 }
 

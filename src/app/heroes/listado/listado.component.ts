@@ -10,8 +10,7 @@ export class ListadoComponent implements OnInit {
   lenguajes:string[]=['PHP','JS','C#','PYTHON'];
   eliminado:string="";
   borrarHeroe(){
-    this.eliminado=this.lenguajes.shift()||'';
-    
+    this.eliminado=this.lenguajes.shift()||'';  
   }
   constructor() {
     console.log('constructor')

@@ -10,27 +10,23 @@ export class AgregarComponent implements OnInit {
 
   constructor(private _dbzService: DbzService) { }
 
-  init:Personaje={
-    nombre:'',
-    poder:0
-  }
+  init:Personaje={ nombre:'',poder:0 }
+  @Input() nuevoPersonaje:Personaje=this.init;
 
   ngOnInit(): void {
   }
-  // @Input() personajes:Personaje[]=[];
-  // this.personajes.push(this.nuevo);
-  @Input() nuevo:Personaje=this.init;
-
- 
+  
+  
   agregar(){
-      if(this.nuevo.nombre.trim().length===0){return;}
-      this._dbzService.agregarPersonaje(this.nuevo)
-       this.nuevo={...this.init}
-    }
-     
- 
+      if(this.nuevoPersonaje.nombre.trim().length===0){return;}
+      this._dbzService.agregarPersonaje(this.nuevoPersonaje)
+       this.nuevoPersonaje={...this.init}
+      }
+  }
 
-}
+    
+// @Input() personajes:Personaje[]=[];
+// this.personajes.push(this.nuevo);
 // @Output() onNuevoPersonaje: EventEmitter<Personaje>=new EventEmitter();
 
 // agregar(){

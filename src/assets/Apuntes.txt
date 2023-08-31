@@ -1,0 +1,32 @@
+* Si importamos un modulo, indica que este puede funcionar por si solo dentro de su scoper sin problema
+  Pero si queremeos un componente de ese modulo tenemos que expotarlos para usarlo en otro modulo.
+
+* Angular verifica internamente si es redundante la importacion de un modulo.
+* Importamos RouterModule, en el modulo donde estara nuestra routerLink
+
+
+
+
+* COMNADOS:
+    - ng g c shared/components/sidebar --inline-style --skip-tests
+____________________________________________________________________________________
+
+Codigo:
+
+*   [propiedades] && (evento)
+    <div (eventoFuncionOut)="funcion($emisiondeevnto)"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

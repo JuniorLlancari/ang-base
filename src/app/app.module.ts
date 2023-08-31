@@ -4,7 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CounterModule } from './counter/counter.module';
 import { DbzModule } from './dbz/dbz.module';
- import { HeroesModule } from './heroes/heroes.module';
+import { HeroesModule } from './heroes/heroes.module';
+import { SharedModule } from './shared/shared.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { DbzModule } from './dbz/dbz.module';
     BrowserModule,
     HeroesModule,
     CounterModule,
-    DbzModule
+    DbzModule,
+    SharedModule,
+    AppRoutingModule
    ],
   providers: [],
   bootstrap: [AppComponent]

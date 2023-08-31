@@ -1,6 +1,12 @@
-<h3>Personaje</h3>
+<h4>Listado </h4>
 <hr>
-<ul>
-    <li  *ngFor="let value of personajes;let i =index">{{value.nombre}} -  {{value.poder | number}}</li>
+<ul class="list-group">
+    <li class="list-group-item"  
+    *ngFor="let value of personajes; let i =index"> 
+    <span>{{value.nombre}} - </span>
+    <strong>Poder:</strong>
+    <span>    {{value.poder | number}}</span>
+    
+    </li>
 </ul>
  

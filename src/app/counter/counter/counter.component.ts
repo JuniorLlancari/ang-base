@@ -8,13 +8,7 @@ import { Component } from "@angular/core";
 
 export class CounterComponent{
     init:number=10;
-    base:number=5;
-    sumar(){
-      this.init+=1;
-    }
-    restar(){
-      this.init-=1;
-    }
+    variacion:number=5;
     acumular(valor:number){
       this.init+=valor;
     }
